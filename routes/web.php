@@ -18,3 +18,8 @@ Route::get('/', function () {
 });
 
 Route::get('/home', 'ProductController@index');
+Route::get('cart', 'ProductController@cart');
+Route::get('add-to-cart/{id}', 'ProductController@addCart');
+
+Route::patch('update-cart', 'ProductController@update');
+Route::delete('remove-from-cart', 'ProductController@remove');
