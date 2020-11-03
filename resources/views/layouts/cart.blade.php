@@ -30,6 +30,7 @@
                     <p class="card-text align-self-center">{{ $details['quantity'] }}</p>
                     <p class="card-text align-self-center">${{ $details['price'] }}</p>
                 </div>
+                <button class="btn btn-danger btn-sm remove-from-cart" data-id="{{ $id }}">Remove</i></button>
             </div>
         </div>
 
@@ -43,5 +44,26 @@
 </div>
 </div>
     @endif
+
+    <script>
+
+        $(".remove-from-cart").click(function (e) {
+            e.preventDefault();
+
+            var ele = $(this);
+
+            if(confirm("Are you sure")) {
+                $.ajax({
+                    url: '{{ url('remove-from-cart') }}',
+                    method: "DELETE",
+                    data: {_token: '{{ csrf_token() }}', id: ele.attr("data-id")},
+                    success: function (response) {
+                        window.location.reload();
+                    }
+                });
+            }
+        });
+
+    </script>
 
 @endsection

@@ -7,7 +7,7 @@
     {{-- @if (count($product>0)) --}}
     
     @foreach ($product as $eachproduct)
-    <div class="col-3">
+    <div class="col-3" style="border: 1px solid red">
         <div class="thumbnail">
             <img class="img-fluid" src="{{ $eachproduct->image }}" alt="" srcset="">
         </div>
