@@ -1,0 +1,47 @@
+.dropdown-menu {
+    width: 25vw;
+    min-width: 15vw;
+}
+
+.btn-yellow{
+    background-color: #F26419;
+    border: none;
+}
+
+@media screen and (max-width: 580px) {
+    .dropdown-menu {
+        width: 80vw;
+    }
+  }
+  
+  @media screen and (max-width: 880px) {
+    .custom-flex{
+        flex-direction: column;
+    }
+    
+    .dropdown-menu {
+        min-width: 40vw;
+    }
+    .btn-yellow{
+        width: 300vw;
+    }
+    
+  }
+
+  svg{
+      width: 100%;
+      height: auto;
+  }
+
+  nav{
+      background-color: #F26419;
+  }
+
+  nav a svg{
+      width: 20vh;
+  }
+  
+  nav .collapse .nav-item .nav-link{
+      color: white;
+      font-weight: bold;
+  }

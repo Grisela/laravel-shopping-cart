@@ -16,21 +16,21 @@
            
         <div class="card bg-light mt-2">
             <div class="row no-gutters">
-                <div class="col-2">
+                <div class="col-2 d-flex justify-content-center align-item-center">
                     <img class="img-fluid" src="{{ $details['image'] }}" class="img-fluid" alt="">
                 </div>
                 <div class="col-8">
                     <div class="card-block p-2">
                         <h4 class="card-title">{{ $details['name'] }}</h4>
-                        <p class="card-text">Description</p>
-                        <a href="#" class="btn btn-primary">Pay Now</a>
+                        <p class="card-text">{{ $details['description'] }}</p>
+                        <p class="card-text align-self-center">${{ $details['price'] }}</p>
+                        
                     </div>
                 </div>
-                <div class="col-2 d-flex align-items-center flex-column details">
-                    <p class="card-text align-self-center">{{ $details['quantity'] }}</p>
-                    <p class="card-text align-self-center">${{ $details['price'] }}</p>
+                <div class="col-2 d-flex align-items-center justify-content-between flex-column details">
+                    <button class="btn btn-sm align-self-end btn-danger remove-from-cart m-2" style="font-weight: bolder" data-id="{{ $id }}">-</i></button>
+                    <p class="card-text align-self-end m-2">x{{ $details['quantity'] }}</p>
                 </div>
-                <button class="btn btn-danger btn-sm remove-from-cart" data-id="{{ $id }}">Remove</i></button>
             </div>
         </div>
 
@@ -38,6 +38,7 @@
 
         <div class="align-self-end pt-2">
             <p><strong> Total : {{ $total }}</strong></p>
+            <button class="btn btn-primary">Pay All</button>
         </div>
     </div>
     

@@ -36,6 +36,7 @@ class ProductController extends Controller
                     $id => [
                         "name" => $product->name,
                         "quantity" => 1,
+                        "description" => $product->description,
                         "price" => $product->price,
                         "image" => $product->image
                     ]
@@ -61,6 +62,7 @@ class ProductController extends Controller
         $cart[$id] = [
             "name" => $product->name,
             "quantity" => 1,
+            "description" => $product->description,
             "price" => $product->price,
             "image" => $product->image
         ];
