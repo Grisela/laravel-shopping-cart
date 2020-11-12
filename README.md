@@ -6,11 +6,11 @@ Create, Read, Delete data from the product list to the cart by using session, I 
 
 ## Install
 
-!. run ```composer install``` </br>
-2. run ```npm install```
-3. make a copy of env.example and rename it to .env
-4. set up an empty database
-5. set up your .env file based on your database
-6. run ```php artisan generate:key```
-7. run ```php artisan migrate```
+1. run ```composer install``` </br>
+2. run ```npm install``` </br>
+3. make a copy of env.example and rename it to .env </br>
+4. set up an empty database </br>
+5. set up your .env file based on your database </br>
+6. run ```php artisan generate:key``` </br>
+7. run ```php artisan migrate``` </br>
 
