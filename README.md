@@ -1,6 +1,6 @@
 ## Features
 
-Create, Read, Delete data from the product list to the cart by using session, I will be gradually adding more features in the future.
+Create, Read, Delete data from the product list by using session, I will be gradually adding more features in the future.
 
 ## Install
 
