@@ -1,5 +1,3 @@
-** PLEASE USE THE _LINX_ BRANCH INSTEAD OF MASTER BRANCH SINCE THIS PROJECT IS _NOT_ IN FINAL PHASE YET **
-
 ## Features
 
 Create, Read, Delete data from the product list to the cart by using session, I will be gradually adding more features in the future.
