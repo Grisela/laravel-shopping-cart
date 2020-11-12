@@ -6,7 +6,7 @@ Create, Read, Delete data from the product list to the cart by using session, I 
 
 ## Install
 
-!. run ```composer install```
+!. run ```composer install``` </br>
 2. run ```npm install```
 3. make a copy of env.example and rename it to .env
 4. set up an empty database
